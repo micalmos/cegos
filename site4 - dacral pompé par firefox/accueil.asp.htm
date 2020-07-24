@@ -1,0 +1,724 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<title>NOF METAL COATINGS EUROPE S.A. : revêtements, traitements anticorrosion, pièces de fixation automobiles</title> 
+<meta name="Description" content="DACRAL : fabrication de produits à base aqueuse et de technologies pour revêtements anticorrosion à faible épaisseur. Traitements de référence pour les pièces de fixation automobile. DACROFORGE®, DACROMET®, GEOMET®, LES FINITIONS, ZINCROMET®, ZINCROSEAL&#8482;">
+<link rel="stylesheet" type="text/css" href="accueil.asp_fichiers/stylessheet.css">
+<script language="javascript" src="accueil.asp_fichiers/fonctions.js"></script>
+<!-- Ancien menu <script language="javascript" src="../menu.js"></script>-->
+
+<style>
+.cout {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; color: #FFFFFF; text-decoration: none; text-align: center; vertical-align: middle; background-color: #7E7E7E}
+.cover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; color: #FFFFFF; text-decoration: none; text-align: center; vertical-align: middle; background-color: #FF0000}
+.lout {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: #E5E5E5; text-decoration: none; text-align: left; vertical-align: middle; text-indent: 8px; background-color: #7E7E7E}
+.lover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: #E5E5E5; text-decoration: none; text-align: left; vertical-align: middle; text-indent: 8px; background-color: #5A5A5A}
+</style>
+
+<script language="javascript">
+
+function bwcheck(){/***Detect Nav Version***/
+	this.ver=navigator.appVersion;
+	this.agent=navigator.userAgent;
+	this.dom=document.getElementById?true:false;
+	this.opera5=this.agent.indexOf("Opera")>-1;
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?true:false;
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?true:false;
+	this.ie4=(document.all && !this.dom && !this.opera5)?true:false;
+	this.ie=this.ie4||this.ie5||this.ie6;
+	this.mac=this.agent.indexOf("Mac")>-1;
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?true:false;
+	this.ns4=(document.layers && !this.dom)?true:false;
+	this.bw=(this.ie6||this.ie5||this.ie4||this.ns4||this.ns6||this.opera5);
+	return this
+}
+bw=new bwcheck();
+
+function ShowHide(obj,how,nest){
+	nest=(!nest) ? "":'document.'+nest+'.';
+	(bw.dom)? document.getElementById(obj).style.visibility=how: (bw.ie4)?document.all[obj].style.visibility=how:eval(nest+"document.layers." +obj).visibility=how;
+}
+
+var sheet=[["c0",""],["",""],["",""],[""]];
+var ready=false; var ls=sheet.length-1 ; var i;var k;
+
+function showhat(Cont,Ki,Aff,Level){
+	if(!ready) return;
+	if (Ki!="") ShowHide(Ki,'visible',Cont);
+	if (sheet[ls][0]!="" && sheet[ls][0]!=Cont) ShowHide(sheet[ls][0],'hidden');
+	if (Aff!="") ShowHide(Aff,'visible');
+	if (sheet[Level][1]!="" && sheet[Level][1]!=Ki){ShowHide(sheet[Level][1],'hidden',sheet[Level][0]);}
+	for (i=Level+1;i<ls;i++){
+		if (sheet[i][1]!=""){
+			ShowHide(sheet[i][1],'hidden',sheet[i][0]);
+			if (sheet[i][0]!="" && sheet[i][0]!=Aff)ShowHide(sheet[i][0],'Hidden');
+		}
+	}
+	sheet[Level][1]=Ki; sheet[Level][0]=Cont; if (Aff!="")sheet[ls][0]=Aff;
+ShowHide('Kill','visible');
+}
+
+/*********Début du paramétrage du menu*************/
+var LargTable="rien";var Decal=0;//décalage par rapport au bord gauche du tableau
+m1=[[0,89,695,18,0],[["Accueil",""],"c",0,0,56,18,"../accueil/accueil.asp",""],[["Notre Société",""],"c",57,0,93,18,"../societe/societe.asp","m1m2"],[["Notre métier",""],"c",151,0,88,18,"../metier/metier.asp","m1m3"],[["Nos références",""],"c",240,0,102,18,"../references/references.asp",""],[["Notre organisation mondiale",""],"c",343,0,177,18,"../organisation/organisation.asp","m1m5"],[["Nos revêtements",""],"c",521,0,113,18,"../revetements/revetements.asp?id=4","m1m6"],[["Contact",""],"c",635,0,60,18,"../contact/contact.asp","m1m7"]];
+
+m1m2=[[57,107,147,72,1],[["Présentation",""],"l",0,0,147,17,"../societe/societe.asp",""],[["Nos marchés",""],"l",0,18,147,17,"../societe/societe2.asp",""],[["Les domaines d'activité",""],"l",0,36,147,17,"../societe/societe3.asp",""],[["Espace Presse",""],"l",0,54,147,17,"../societe/societe4.asp",""]];
+
+m1m3=[[151,107,140,90,1],[["L'anticorrosion",""],"l",0,0,140,17,"../metier/metier.asp",""],[["Notre valeur ajoutée",""],"l",0,18,140,17,"../metier/metier_bis.asp",""],[["Nos procédés",""],"l",0,36,140,17,"../metier/metier2.asp",""],[["Notre système Qualité",""],"l",0,54,140,17,"../metier/metier3.asp",""],[["L'environnement",""],"l",0,72,140,17,"../metier/metier4.asp",""]];
+
+m1m5=[[343,107,148,54,1],[["Notre groupe",""],"l",0,0,148,17,"../organisation/organisation.asp",""],[["Nos représentants",""],"l",0,18,148,17,"../organisation/organisation2.asp",""],[["Les licenciés européens",""],"l",0,36,148,17,"../organisation/organisation3.asp",""]];
+
+m1m6=[[521,107,168,72,1],[["DACROFORGE<SUP>®</SUP>",""],"l",0,0,168,17,"../revetements/revetements.asp?id=4",""],[["DACROMET<SUP>®</SUP>",""],"l",0,18,168,17,"../revetements/revetements.asp?id=1",""],[["GEOMET<SUP>®</SUP>",""],"l",0,36,168,17,"../revetements/revetements.asp?id=2",""],[["LES FINITIONS",""],"l",0,54,168,17,"../revetements/revetements.asp?id=3",""]];
+
+m1m7=[[635,107,136,54,1],[["Nos coordonnées",""],"l",0,0,136,17,"../contact/contact.asp",""],[["Formulaire de contact",""],"l",0,18,136,17,"../contact/contact2.asp",""],[["Fonds d'écran",""],"l",0,36,136,17,"../goodies/background.asp",""]];
+
+var boxs=[m1,m1m2,m1m3,m1m5,m1m6,m1m7];
+var chem="../../images/menu/";//uniquement pour trans.gif ,back.gif et back1.gif
+/*********Fin du paramétrage du menu*************/
+
+var menu=""; var im=boxs.length; var zind=2;  var ns=document.layers;
+
+viz1=(!ns)?"visible":"show"; viz2=(!ns)?"hidden":"hide";viz3="inherit";
+
+function CreateMenu(XX) { 
+var autoAff=(!XX)?"":"s"+(1+(XX*3));
+//Génération du calque de fond invisible pour la sortie du menu pour IE,..
+menu+=(!ns)?"<div id=\"Kill\" onmouseover=\"showhat(\'c0\',\'"+autoAff+"\',\'\',0);ShowHide(\'Kill\',\'hidden\')\" style=\"position:absolute; left:0px; top:0px; z-index:1; visibility: hidden; width:100%; height:100%; background-image: url(images/trans.gif); layer-background-image: url("+chem+"trans.gif)\">  </div>\n":""
+
+//Génération du calque de fond invisible pour la sortie du menu pour NS
+menu+=(ns)?"<layer id=\"Kill\" onmouseover=\"showhat(\'c0\',\'"+autoAff+"\',\'\',0);ShowHide(\'Kill\',\'hidden\')\" left=\"0\" top=\"0\" z-index=\"1\" visibility=\"hide\" width=\"100%\" height=\"100%\"><img src=\""+chem+"trans.gif\" width=\"100%\" height=\"100%\"></layer>\n":""
+
+	for (i=0;i<im;i++){
+		for (k=0;k<boxs[i].length;k++){
+			if (k==0){
+				menu+=(!ns)?"<div id=\"c"+i+"\" style=\"position:absolute; ":"<layer id=\"c"+i+"\" "
+				menu+=(!ns)?"left:"+boxs[i][k][0]+"px; top:"+boxs[i][k][1]+"px; width:"+boxs[i][k][2]+"px; height:"+boxs[i][k][3]+"px; z-index:"+zind+"; ":"left=\""+boxs[i][k][0]+"\" top=\""+boxs[i][k][1]+"\" width=\""+boxs[i][k][2]+"\" height=\""+boxs[i][k][3]+"\" z-index=\""+zind+"\" "
+				menu+=(!ns)?"clip: rect(0 "+boxs[i][k][2]+" "+boxs[i][k][3]+" 0); visibility: "+(i==0?viz1:viz2)+"\"> ":"clip=\"0,0,"+boxs[i][k][2]+","+boxs[i][k][3]+"\" visibility=\""+(i==0?viz1:viz2)+"\"> "
+				menu+=(i==0)?"<img src=\""+chem+"back.gif\" width=\""+boxs[i][k][2]+"\" height=\""+boxs[i][k][3]+"\" border=\"0\">\n" : "<img src=\""+chem+"back1.gif\" width=\""+boxs[i][k][2]+"\" height=\""+boxs[i][k][3]+"\" border=\"0\">\n"
+				zind+=1
+			}else{ var st="over"; var j; var isr="" ;for (j=1;j<=3;j++){ st=(st=="over")?"out":"over";
+				menu+=(!ns)?"<div id=\"s"+zind+"\" style=\"position:absolute; ":"<layer id=\"s"+zind+"\" "
+				menu+=(!ns)?"left:"+boxs[i][k][2]+"px; top:"+boxs[i][k][3]+"px; z-index:"+zind+"; ":"left=\""+boxs[i][k][2]+"\" top=\""+boxs[i][k][3]+"\" z-index=\""+zind+"\" "
+				menu+=(!ns)?" visibility: "+(j==2?viz2:viz3)+"\">\n":"visibility=\""+(j==2?viz2:viz3)+"\">\n"
+				if(j==3 && boxs[i][k][7]!="") for(m=0;m<im;m++){if(boxs[m]==eval(boxs[i][k][7])) {isr='c'+m;break}}
+				menu+=(j!=3)?"<table width=\""+boxs[i][k][4]+"\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n":"<a href=\""+boxs[i][k][6]+"\" style=\"cursor:default;\" onmouseover=\"showhat(\'c"+i+"\',\'s"+(zind-1)+"\',\'"+isr+"\',"+boxs[i][0][4]+")\">"
+				menu+=(j!=3)?"<tr>\n<td class=\""+boxs[i][k][1]+st+"\" width=\""+boxs[i][k][4]+"\"  height=\""+boxs[i][k][5]+"\">"+((j==2 && boxs[i][k][0][1]!="")?boxs[i][k][0][1]:boxs[i][k][0][0])+"</td></tr></table>":"<img src=\""+chem+"trans.gif\" width=\""+boxs[i][k][4]+"\" height=\""+boxs[i][k][5]+"\" border=\"0\"></a>"
+				menu+=(!ns)?"</div>\n":"</layer>\n"
+				zind+=1; isr="";								}
+			}
+		if (k==boxs[i].length-1){menu+=(!ns)?"</div>\n":"</layer>\n";}
+	}
+}
+ready=true;
+window.setTimeout("showhat('c0','"+autoAff+"','',0)", 1000);
+return menu
+}
+
+function AjustKalc(obj,horz,cale){
+	this.elmt=bw.dom? document.getElementById(obj): bw.ie4?document.all[obj]:bw.ns4?eval("document.layers." +obj):0;
+	this.css=bw.dom||bw.ie4?this.elmt.style:this.elmt;
+	this.frac=cale;
+
+	this.pw=bw.ns4?(document['point'].x):bw.ie4?document.all['point'].offsetLeft:document.getElementById('point').offsetLeft;
+	this.posX=ajuste(this.pw, this.frac);
+	this.nom=obj;
+	this.obj = obj + "Object"; eval(this.obj + "=this");
+	return this
+}
+
+AjustKalc.prototype.pilpoil = function(){
+this.css.left=this.posX;
+}
+
+function ajuste(nbre, frac) {
+	if (nbre<=0){return frac}else{frac+=nbre;return frac}
+}
+
+if(bw.ns4){ //*** Reload NS4 ***//
+	scrX= innerWidth; scrY= innerHeight;
+	onresize= function(){if(scrX!= innerWidth || scrY!= innerHeight) history.go(0)}
+}else{//*** Reinitialise le menu ***//
+onresize= init
+}
+
+function init(e,time) {
+if (window.opera){ document.getElementById('point').onmouseover=init}//ben oui
+	for (i=0;i<im;i++){
+		var c="c"+i;
+		cale_mon_menu = new AjustKalc(c,true,boxs[i][0][0]);
+		cale_mon_menu.pilpoil();
+	}
+}
+onload = init
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body leftmargin="0" topmargin="0" bgcolor="#ededed" marginheight="0" marginwidth="0">
+<script language="JavaScript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='../revetements/revetements_fiche.asp?id="+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+/**** Indiquer  le n° de bouton  en paramètre de la fonction (de 1 à 7)*****/
+document.write(CreateMenu(1));
+    </script><div id="Kill" onmouseover="showhat('c0','s4','',0);ShowHide('Kill','hidden')" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: visible; width: 100%; height: 100%; background-image: url(&quot;images/trans.gif&quot;);">  </div>
+<div id="c0" style="position: absolute; left: 122px; top: 89px; width: 695px; height: 18px; z-index: 2; clip: rect(0pt, 695px, 18px, 0pt); visibility: visible;"> <img src="accueil.asp_fichiers/back.gif" border="0" width="695" height="18">
+<div id="s3" style="position: absolute; left: 0px; top: 0px; z-index: 3; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="56">
+<tbody><tr>
+<td class="cout" width="56" height="18">Accueil</td></tr></tbody></table></div>
+<div id="s4" style="position: absolute; left: 0px; top: 0px; z-index: 4; visibility: visible;">
+<table border="0" cellpadding="0" cellspacing="0" width="56">
+<tbody><tr>
+<td class="cover" width="56" height="18">Accueil</td></tr></tbody></table></div>
+<div id="s5" style="position: absolute; left: 0px; top: 0px; z-index: 5; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/accueil/accueil.asp" style="cursor: default;" onmouseover="showhat('c0','s4','',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="56" height="18"></a></div>
+<div id="s6" style="position: absolute; left: 57px; top: 0px; z-index: 6; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="93">
+<tbody><tr>
+<td class="cout" width="93" height="18">Notre Société</td></tr></tbody></table></div>
+<div id="s7" style="position: absolute; left: 57px; top: 0px; z-index: 7; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="93">
+<tbody><tr>
+<td class="cover" width="93" height="18">Notre Société</td></tr></tbody></table></div>
+<div id="s8" style="position: absolute; left: 57px; top: 0px; z-index: 8; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/societe/societe.asp" style="cursor: default;" onmouseover="showhat('c0','s7','c1',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="93" height="18"></a></div>
+<div id="s9" style="position: absolute; left: 151px; top: 0px; z-index: 9; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="88">
+<tbody><tr>
+<td class="cout" width="88" height="18">Notre métier</td></tr></tbody></table></div>
+<div id="s10" style="position: absolute; left: 151px; top: 0px; z-index: 10; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="88">
+<tbody><tr>
+<td class="cover" width="88" height="18">Notre métier</td></tr></tbody></table></div>
+<div id="s11" style="position: absolute; left: 151px; top: 0px; z-index: 11; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/metier/metier.asp" style="cursor: default;" onmouseover="showhat('c0','s10','c2',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="88" height="18"></a></div>
+<div id="s12" style="position: absolute; left: 240px; top: 0px; z-index: 12; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="102">
+<tbody><tr>
+<td class="cout" width="102" height="18">Nos références</td></tr></tbody></table></div>
+<div id="s13" style="position: absolute; left: 240px; top: 0px; z-index: 13; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="102">
+<tbody><tr>
+<td class="cover" width="102" height="18">Nos références</td></tr></tbody></table></div>
+<div id="s14" style="position: absolute; left: 240px; top: 0px; z-index: 14; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/references/references.asp" style="cursor: default;" onmouseover="showhat('c0','s13','',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="102" height="18"></a></div>
+<div id="s15" style="position: absolute; left: 343px; top: 0px; z-index: 15; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="177">
+<tbody><tr>
+<td class="cout" width="177" height="18">Notre organisation mondiale</td></tr></tbody></table></div>
+<div id="s16" style="position: absolute; left: 343px; top: 0px; z-index: 16; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="177">
+<tbody><tr>
+<td class="cover" width="177" height="18">Notre organisation mondiale</td></tr></tbody></table></div>
+<div id="s17" style="position: absolute; left: 343px; top: 0px; z-index: 17; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/organisation/organisation.asp" style="cursor: default;" onmouseover="showhat('c0','s16','c3',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="177" height="18"></a></div>
+<div id="s18" style="position: absolute; left: 521px; top: 0px; z-index: 18; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="113">
+<tbody><tr>
+<td class="cout" width="113" height="18">Nos revêtements</td></tr></tbody></table></div>
+<div id="s19" style="position: absolute; left: 521px; top: 0px; z-index: 19; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="113">
+<tbody><tr>
+<td class="cover" width="113" height="18">Nos revêtements</td></tr></tbody></table></div>
+<div id="s20" style="position: absolute; left: 521px; top: 0px; z-index: 20; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=4" style="cursor: default;" onmouseover="showhat('c0','s19','c4',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="113" height="18"></a></div>
+<div id="s21" style="position: absolute; left: 635px; top: 0px; z-index: 21; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="60">
+<tbody><tr>
+<td class="cout" width="60" height="18">Contact</td></tr></tbody></table></div>
+<div id="s22" style="position: absolute; left: 635px; top: 0px; z-index: 22; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="60">
+<tbody><tr>
+<td class="cover" width="60" height="18">Contact</td></tr></tbody></table></div>
+<div id="s23" style="position: absolute; left: 635px; top: 0px; z-index: 23; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/contact/contact.asp" style="cursor: default;" onmouseover="showhat('c0','s22','c5',0)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="60" height="18"></a></div>
+</div>
+<div id="c1" style="position: absolute; left: 179px; top: 107px; width: 147px; height: 72px; z-index: 24; clip: rect(0pt, 147px, 72px, 0pt); visibility: hidden;"> <img src="accueil.asp_fichiers/back1.gif" border="0" width="147" height="72">
+<div id="s25" style="position: absolute; left: 0px; top: 0px; z-index: 25; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lout" width="147" height="17">Présentation</td></tr></tbody></table></div>
+<div id="s26" style="position: absolute; left: 0px; top: 0px; z-index: 26; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lover" width="147" height="17">Présentation</td></tr></tbody></table></div>
+<div id="s27" style="position: absolute; left: 0px; top: 0px; z-index: 27; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/societe/societe.asp" style="cursor: default;" onmouseover="showhat('c1','s26','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="147" height="17"></a></div>
+<div id="s28" style="position: absolute; left: 0px; top: 18px; z-index: 28; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lout" width="147" height="17">Nos marchés</td></tr></tbody></table></div>
+<div id="s29" style="position: absolute; left: 0px; top: 18px; z-index: 29; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lover" width="147" height="17">Nos marchés</td></tr></tbody></table></div>
+<div id="s30" style="position: absolute; left: 0px; top: 18px; z-index: 30; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/societe/societe2.asp" style="cursor: default;" onmouseover="showhat('c1','s29','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="147" height="17"></a></div>
+<div id="s31" style="position: absolute; left: 0px; top: 36px; z-index: 31; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lout" width="147" height="17">Les domaines d'activité</td></tr></tbody></table></div>
+<div id="s32" style="position: absolute; left: 0px; top: 36px; z-index: 32; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lover" width="147" height="17">Les domaines d'activité</td></tr></tbody></table></div>
+<div id="s33" style="position: absolute; left: 0px; top: 36px; z-index: 33; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/societe/societe3.asp" style="cursor: default;" onmouseover="showhat('c1','s32','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="147" height="17"></a></div>
+<div id="s34" style="position: absolute; left: 0px; top: 54px; z-index: 34; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lout" width="147" height="17">Espace Presse</td></tr></tbody></table></div>
+<div id="s35" style="position: absolute; left: 0px; top: 54px; z-index: 35; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="147">
+<tbody><tr>
+<td class="lover" width="147" height="17">Espace Presse</td></tr></tbody></table></div>
+<div id="s36" style="position: absolute; left: 0px; top: 54px; z-index: 36; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/societe/societe4.asp" style="cursor: default;" onmouseover="showhat('c1','s35','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="147" height="17"></a></div>
+</div>
+<div id="c2" style="position: absolute; left: 273px; top: 107px; width: 140px; height: 90px; z-index: 37; clip: rect(0pt, 140px, 90px, 0pt); visibility: hidden;"> <img src="accueil.asp_fichiers/back1.gif" border="0" width="140" height="90">
+<div id="s38" style="position: absolute; left: 0px; top: 0px; z-index: 38; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lout" width="140" height="17">L'anticorrosion</td></tr></tbody></table></div>
+<div id="s39" style="position: absolute; left: 0px; top: 0px; z-index: 39; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lover" width="140" height="17">L'anticorrosion</td></tr></tbody></table></div>
+<div id="s40" style="position: absolute; left: 0px; top: 0px; z-index: 40; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/metier/metier.asp" style="cursor: default;" onmouseover="showhat('c2','s39','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="140" height="17"></a></div>
+<div id="s41" style="position: absolute; left: 0px; top: 18px; z-index: 41; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lout" width="140" height="17">Notre valeur ajoutée</td></tr></tbody></table></div>
+<div id="s42" style="position: absolute; left: 0px; top: 18px; z-index: 42; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lover" width="140" height="17">Notre valeur ajoutée</td></tr></tbody></table></div>
+<div id="s43" style="position: absolute; left: 0px; top: 18px; z-index: 43; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/metier/metier_bis.asp" style="cursor: default;" onmouseover="showhat('c2','s42','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="140" height="17"></a></div>
+<div id="s44" style="position: absolute; left: 0px; top: 36px; z-index: 44; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lout" width="140" height="17">Nos procédés</td></tr></tbody></table></div>
+<div id="s45" style="position: absolute; left: 0px; top: 36px; z-index: 45; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lover" width="140" height="17">Nos procédés</td></tr></tbody></table></div>
+<div id="s46" style="position: absolute; left: 0px; top: 36px; z-index: 46; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/metier/metier2.asp" style="cursor: default;" onmouseover="showhat('c2','s45','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="140" height="17"></a></div>
+<div id="s47" style="position: absolute; left: 0px; top: 54px; z-index: 47; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lout" width="140" height="17">Notre système Qualité</td></tr></tbody></table></div>
+<div id="s48" style="position: absolute; left: 0px; top: 54px; z-index: 48; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lover" width="140" height="17">Notre système Qualité</td></tr></tbody></table></div>
+<div id="s49" style="position: absolute; left: 0px; top: 54px; z-index: 49; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/metier/metier3.asp" style="cursor: default;" onmouseover="showhat('c2','s48','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="140" height="17"></a></div>
+<div id="s50" style="position: absolute; left: 0px; top: 72px; z-index: 50; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lout" width="140" height="17">L'environnement</td></tr></tbody></table></div>
+<div id="s51" style="position: absolute; left: 0px; top: 72px; z-index: 51; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="140">
+<tbody><tr>
+<td class="lover" width="140" height="17">L'environnement</td></tr></tbody></table></div>
+<div id="s52" style="position: absolute; left: 0px; top: 72px; z-index: 52; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/metier/metier4.asp" style="cursor: default;" onmouseover="showhat('c2','s51','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="140" height="17"></a></div>
+</div>
+<div id="c3" style="position: absolute; left: 465px; top: 107px; width: 148px; height: 54px; z-index: 53; clip: rect(0pt, 148px, 54px, 0pt); visibility: hidden;"> <img src="accueil.asp_fichiers/back1.gif" border="0" width="148" height="54">
+<div id="s54" style="position: absolute; left: 0px; top: 0px; z-index: 54; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="148">
+<tbody><tr>
+<td class="lout" width="148" height="17">Notre groupe</td></tr></tbody></table></div>
+<div id="s55" style="position: absolute; left: 0px; top: 0px; z-index: 55; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="148">
+<tbody><tr>
+<td class="lover" width="148" height="17">Notre groupe</td></tr></tbody></table></div>
+<div id="s56" style="position: absolute; left: 0px; top: 0px; z-index: 56; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/organisation/organisation.asp" style="cursor: default;" onmouseover="showhat('c3','s55','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="148" height="17"></a></div>
+<div id="s57" style="position: absolute; left: 0px; top: 18px; z-index: 57; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="148">
+<tbody><tr>
+<td class="lout" width="148" height="17">Nos représentants</td></tr></tbody></table></div>
+<div id="s58" style="position: absolute; left: 0px; top: 18px; z-index: 58; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="148">
+<tbody><tr>
+<td class="lover" width="148" height="17">Nos représentants</td></tr></tbody></table></div>
+<div id="s59" style="position: absolute; left: 0px; top: 18px; z-index: 59; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/organisation/organisation2.asp" style="cursor: default;" onmouseover="showhat('c3','s58','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="148" height="17"></a></div>
+<div id="s60" style="position: absolute; left: 0px; top: 36px; z-index: 60; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="148">
+<tbody><tr>
+<td class="lout" width="148" height="17">Les licenciés européens</td></tr></tbody></table></div>
+<div id="s61" style="position: absolute; left: 0px; top: 36px; z-index: 61; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="148">
+<tbody><tr>
+<td class="lover" width="148" height="17">Les licenciés européens</td></tr></tbody></table></div>
+<div id="s62" style="position: absolute; left: 0px; top: 36px; z-index: 62; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/organisation/organisation3.asp" style="cursor: default;" onmouseover="showhat('c3','s61','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="148" height="17"></a></div>
+</div>
+<div id="c4" style="position: absolute; left: 643px; top: 107px; width: 168px; height: 72px; z-index: 63; clip: rect(0pt, 168px, 72px, 0pt); visibility: hidden;"> <img src="accueil.asp_fichiers/back1.gif" border="0" width="168" height="72">
+<div id="s64" style="position: absolute; left: 0px; top: 0px; z-index: 64; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lout" width="168" height="17">DACROFORGE<sup>®</sup></td></tr></tbody></table></div>
+<div id="s65" style="position: absolute; left: 0px; top: 0px; z-index: 65; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lover" width="168" height="17">DACROFORGE<sup>®</sup></td></tr></tbody></table></div>
+<div id="s66" style="position: absolute; left: 0px; top: 0px; z-index: 66; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=4" style="cursor: default;" onmouseover="showhat('c4','s65','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="168" height="17"></a></div>
+<div id="s67" style="position: absolute; left: 0px; top: 18px; z-index: 67; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lout" width="168" height="17">DACROMET<sup>®</sup></td></tr></tbody></table></div>
+<div id="s68" style="position: absolute; left: 0px; top: 18px; z-index: 68; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lover" width="168" height="17">DACROMET<sup>®</sup></td></tr></tbody></table></div>
+<div id="s69" style="position: absolute; left: 0px; top: 18px; z-index: 69; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=1" style="cursor: default;" onmouseover="showhat('c4','s68','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="168" height="17"></a></div>
+<div id="s70" style="position: absolute; left: 0px; top: 36px; z-index: 70; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lout" width="168" height="17">GEOMET<sup>®</sup></td></tr></tbody></table></div>
+<div id="s71" style="position: absolute; left: 0px; top: 36px; z-index: 71; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lover" width="168" height="17">GEOMET<sup>®</sup></td></tr></tbody></table></div>
+<div id="s72" style="position: absolute; left: 0px; top: 36px; z-index: 72; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=2" style="cursor: default;" onmouseover="showhat('c4','s71','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="168" height="17"></a></div>
+<div id="s73" style="position: absolute; left: 0px; top: 54px; z-index: 73; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lout" width="168" height="17">LES FINITIONS</td></tr></tbody></table></div>
+<div id="s74" style="position: absolute; left: 0px; top: 54px; z-index: 74; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="168">
+<tbody><tr>
+<td class="lover" width="168" height="17">LES FINITIONS</td></tr></tbody></table></div>
+<div id="s75" style="position: absolute; left: 0px; top: 54px; z-index: 75; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=3" style="cursor: default;" onmouseover="showhat('c4','s74','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="168" height="17"></a></div>
+</div>
+<div id="c5" style="position: absolute; left: 757px; top: 107px; width: 136px; height: 54px; z-index: 76; clip: rect(0pt, 136px, 54px, 0pt); visibility: hidden;"> <img src="accueil.asp_fichiers/back1.gif" border="0" width="136" height="54">
+<div id="s77" style="position: absolute; left: 0px; top: 0px; z-index: 77; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tbody><tr>
+<td class="lout" width="136" height="17">Nos coordonnées</td></tr></tbody></table></div>
+<div id="s78" style="position: absolute; left: 0px; top: 0px; z-index: 78; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tbody><tr>
+<td class="lover" width="136" height="17">Nos coordonnées</td></tr></tbody></table></div>
+<div id="s79" style="position: absolute; left: 0px; top: 0px; z-index: 79; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/contact/contact.asp" style="cursor: default;" onmouseover="showhat('c5','s78','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="136" height="17"></a></div>
+<div id="s80" style="position: absolute; left: 0px; top: 18px; z-index: 80; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tbody><tr>
+<td class="lout" width="136" height="17">Formulaire de contact</td></tr></tbody></table></div>
+<div id="s81" style="position: absolute; left: 0px; top: 18px; z-index: 81; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tbody><tr>
+<td class="lover" width="136" height="17">Formulaire de contact</td></tr></tbody></table></div>
+<div id="s82" style="position: absolute; left: 0px; top: 18px; z-index: 82; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/contact/contact2.asp" style="cursor: default;" onmouseover="showhat('c5','s81','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="136" height="17"></a></div>
+<div id="s83" style="position: absolute; left: 0px; top: 36px; z-index: 83; visibility: inherit;">
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tbody><tr>
+<td class="lout" width="136" height="17">Fonds d'écran</td></tr></tbody></table></div>
+<div id="s84" style="position: absolute; left: 0px; top: 36px; z-index: 84; visibility: hidden;">
+<table border="0" cellpadding="0" cellspacing="0" width="136">
+<tbody><tr>
+<td class="lover" width="136" height="17">Fonds d'écran</td></tr></tbody></table></div>
+<div id="s85" style="position: absolute; left: 0px; top: 36px; z-index: 85; visibility: inherit;">
+<a href="http://www.dacral.com/fr/pages/goodies/background.asp" style="cursor: default;" onmouseover="showhat('c5','s84','',1)"><img src="accueil.asp_fichiers/trans.gif" border="0" width="136" height="17"></a></div>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td align="center"><table id="point" background="accueil.asp_fichiers/spacer2.gif" border="0" cellpadding="0" cellspacing="0" width="780">
+      <tbody><tr>
+        <!-- DEBUT BANDEAU-->
+        <td width="780"><a href="http://www.dacral.com/fr/pages/accueil/accueil.asp"><img src="accueil.asp_fichiers/bandeau.gif" name="point" id="point" border="0" width="780" height="89"></a></td>
+        <!-- FIN BANDEAU -->
+      </tr>
+      <tr>
+        <!-- DEBUT MENU -->
+        <td><img src="accueil.asp_fichiers/spacermenu.gif" width="695" height="18"><img src="accueil.asp_fichiers/fondmenu.gif" width="85" height="18"></td>
+        <!-- FIN MENU -->
+      </tr>
+      <tr>
+        <td background="accueil.asp_fichiers/gris_haut.gif"><img src="accueil.asp_fichiers/gris_haut.gif" border="0" width="12" height="10"></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+      </tr>
+      <tr>
+        <!-- DEBUT ZONE CONTENU -->
+        <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                  <td><table border="0" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                      <td background="accueil.asp_fichiers/grisclair_haut.gif"><img src="accueil.asp_fichiers/grisclair_haut.gif" border="0" width="12" height="6"></td>
+                      <td background="accueil.asp_fichiers/grisclair_haut.gif"><img src="accueil.asp_fichiers/grisclair_haut.gif" border="0" width="12" height="6"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><img src="accueil.asp_fichiers/illus_drapeau.jpg" width="214" height="114"><br>
+                          <img src="accueil.asp_fichiers/illus_drapeaux3.jpg" width="214" height="15"><br>
+                      </td>
+                      <td style="background-repeat: no-repeat;" background="accueil.asp_fichiers/illus_drapeau2.gif" valign="top" width="373" height="114">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5c5c5c">Nous sommes <strong>leader</strong> dans le domaine <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de la <strong>fabrication de produits à base aqueuse </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;et de technologies pour <strong>revêtements anticorrosion</strong> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;à faible épaisseur.<br>
+      <img src="accueil.asp_fichiers/spacer.gif" width="1" height="12"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nos produits sont disponibles</font> <font color="#df0000">partout dans le <strong>monde</strong>.</font><br>
+      <img src="accueil.asp_fichiers/spacer.gif" width="1" height="15"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<font color="#df0000"><strong>Les traitements de référence</strong><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pour les pièces 
+                              de fixation de l'automobile !&nbsp;<br>
+      <br>
+      <img src="accueil.asp_fichiers/spacer.gif" width="373" height="1">    </font></td>
+                    </tr>
+                  </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                  <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr>
+                      <td valign="top"><img src="accueil.asp_fichiers/map_dacral_2008_home.gif" usemap="#MapMonde" style="margin: 0px 0px 5px 10px;" border="0"></td>
+                      <td align="left"><font color="#df0000">
+                        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="375" height="72">
+                          <param name="_cx" value="9922">
+                          <param name="_cy" value="1905">
+                          <param name="FlashVars" value="">
+                          <param name="Movie" value="geomet_frsept2005.swf">
+                          <param name="Src" value="geomet_frsept2005.swf">
+                          <param name="WMode" value="Window">
+                          <param name="Play" value="-1">
+                          <param name="Loop" value="-1">
+                          <param name="Quality" value="High">
+                          <param name="SAlign" value="">
+                          <param name="Menu" value="-1">
+                          <param name="Base" value="">
+                          <param name="AllowScriptAccess" value="always">
+                          <param name="Scale" value="ShowAll">
+                          <param name="DeviceFont" value="0">
+                          <param name="EmbedMovie" value="0">
+                          <param name="BGColor" value="">
+                          <param name="SWRemote" value="">
+                          <param name="MovieData" value="">
+                          <param name="SeamlessTabbing" value="1"><embed src="accueil.asp_fichiers/geomet_fr.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="375" height="72">
+                        </object>
+                      </font></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr>
+              </tbody></table></td>
+              <td background="accueil.asp_fichiers/fond_actu.gif" valign="top" width="100%"><img src="accueil.asp_fichiers/titre_actualites.gif" width="193" height="22"><br>
+
+                  <img src="accueil.asp_fichiers/RC%25204%2520home%2520page.jpg">
+                  
+                  <br>
+                  <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                    <tbody><tr>
+                      <td><strong><font color="#5c5c5c">Prix Responsible Care<sup>®</sup> 2010<br>
+                              <img src="accueil.asp_fichiers/spacer.gif" width="1" height="5"></font></strong><font color="#5c5c5c"><br>
+                              NOF METAL COATINGS EUROPE remporte le prix Responsible Care<sup>®</sup> Europe 2010</font><br>
+                              <img src="accueil.asp_fichiers/spacer.gif" width="1" height="5"><br>
+                              
+                              <a class="lienrouge" href="http://www.dacral.com/fr/pages/societe/societe4.asp?id=260">en savoir plus</a>
+                              
+                      </td>
+                    </tr>
+                  </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#c33835"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+      </tr>
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="127" height="1"></td>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="6" height="1"></td>
+              <td><img src="accueil.asp_fichiers/titre_nosproduits.gif" width="215" height="25"></td>
+              <td><img src="accueil.asp_fichiers/titre_licencieseuropeens.gif" width="239" height="25"></td>
+              <td><img src="accueil.asp_fichiers/titre_rechercherapide.gif" width="192" height="25"></td>
+            </tr>
+            <tr valign="top">
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td bgcolor="#d0d0d0"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td bgcolor="#d0d0d0"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td bgcolor="#d0d0d0"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+            </tr>
+            <tr valign="top">
+              <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="7"></td>
+                  </tr>
+                  <tr>
+                    <td><table border="0" cellpadding="5" cellspacing="0" width="100%">
+                        <tbody><tr>
+                          <td background="accueil.asp_fichiers/titre_espacelicencies.gif" bgcolor="#eaeaea"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="11"></td>
+                        </tr>
+                        <tr>
+                          <form name="form1" method="post" action="../extranet/accueil.asp"></form>
+                            <td bgcolor="#5676af"><font color="#ffffff">Identifiant
+                                :</font><br>
+                                                    <input class="texteform" name="LOGIN" size="8" type="text">
+                                                    <br>
+                                                    <img src="accueil.asp_fichiers/spacer.gif" width="1" height="10"><br>
+                                                    <font color="#ffffff">Mot
+                                                    de passe :</font><br>
+                                                    <input class="texteform" name="PASSWORD" size="8" type="text">
+                                                    <input src="accueil.asp_fichiers/bt_ok.gif" type="image" border="0" width="20" height="11"> </td>
+                          
+                        </tr>
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="6" height="1"></td>
+              <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="7"></td>
+                  </tr>
+                  <tr>
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody><tr valign="top">
+                        <td><img src="accueil.asp_fichiers/bloc_nosproduits.gif" width="46" height="106"></td>
+                        <td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+<tbody><tr>
+	<td><font color="#5c5c5c">DACROFORGE<sup>®</sup></font></td>
+	<td><a class="lienrouge" href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=4">+&nbsp;d'infos</a></td>
+</tr>
+
+<tr>
+	<td colspan="2"><img src="accueil.asp_fichiers/trait.gif" width="165" height="8"></td>
+</tr>
+
+<tr>
+	<td><font color="#5c5c5c">DACROMET<sup>®</sup></font></td>
+	<td><a class="lienrouge" href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=1">+&nbsp;d'infos</a></td>
+</tr>
+
+<tr>
+	<td colspan="2"><img src="accueil.asp_fichiers/trait.gif" width="165" height="8"></td>
+</tr>
+
+<tr>
+	<td><font color="#5c5c5c">GEOMET<sup>®</sup></font></td>
+	<td><a class="lienrouge" href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=2">+&nbsp;d'infos</a></td>
+</tr>
+
+<tr>
+	<td colspan="2"><img src="accueil.asp_fichiers/trait.gif" width="165" height="8"></td>
+</tr>
+
+<tr>
+	<td><font color="#5c5c5c">LES FINITIONS</font></td>
+	<td><a class="lienrouge" href="http://www.dacral.com/fr/pages/revetements/revetements.asp?id=3">+&nbsp;d'infos</a></td>
+</tr>
+
+</tbody></table>
+						</td>
+                      </tr>
+                    </tbody></table></td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td><img src="accueil.asp_fichiers/illus_carte.gif" usemap="#MapMap" border="0" width="240" height="121"></td>
+              <td><table border="0" cellpadding="5" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <form name="form2" method="post" action="resultats_recherche.asp"></form>
+                      <td bgcolor="#eaeaea"> <font color="#5c5c5c">Recherche
+                          par mot-clé</font><br>
+                          <input class="texteform" name="RECHERCHE" size="14" type="text">
+      &nbsp; 
+                          <input src="accueil.asp_fichiers/bt_ok_rouge.gif" type="image" border="0" width="33" height="14"><br>
+                          <img src="accueil.asp_fichiers/spacer.gif" width="1" height="8"><br>
+                      </td>
+                    
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+                  <tr bgcolor="#eaeaea">
+                    <td><font color="#5c5c5c">Liste de nos produits</font><br>
+                        <select class="texteform" name="select" onchange="MM_jumpMenu('parent',this,0)">
+						<option selected="selected">Sélectionnez un produit</option>
+<option value="18">DACROFORGE® L </option><option value="19">DACROFORGE® L2</option><option value="17">DACROFORGE® Z </option><option value="13">DACROLUB® 10L-10B-10G</option><option value="16">DACROMET® 320</option><option value="5">DACROMET® 500</option><option value="6">DACROMET® LC</option><option value="9">GEOBLACK®</option><option value="10">GEOMET®  360</option><option value="111">GEOMET® 321</option><option value="106">GEOMET® 500</option><option value="125">GEOMET® 720</option><option value="130">PLUS® 10</option><option value="11">PLUS® L, VL, ML, M, XL</option><option value="12">PLUS® ML BLACK</option><option value="136">ROTORPLUS BLACK</option>
+                        </select>
+                        <br>
+                        <img src="accueil.asp_fichiers/spacer.gif" width="1" height="20"></td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+        <!-- FIN ZONE CONTENU -->
+      </tr>
+      <tr>
+        <td>
+          <!-- DEBUT ZONE BAS DE PAGE -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="30"></td>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td width="1"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+            </tr>
+            <tr>
+              <td bgcolor="#d7d7d7" nowrap="nowrap"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td align="right" bgcolor="#d7d7d7" nowrap="nowrap"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td align="right" bgcolor="#d7d7d7" valign="bottom"><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap"><img src="accueil.asp_fichiers/spacer.gif" width="5" height="5"></td>
+              <td align="right" nowrap="nowrap"><img src="accueil.asp_fichiers/spacer.gif" width="5" height="5"></td>
+              <td align="right" valign="bottom"><img src="accueil.asp_fichiers/spacer.gif" width="5" height="5"></td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap">&nbsp;&nbsp;&nbsp;<a href="http://www.dacral.com/gb/pages/accueil/accueil.asp"><img src="accueil.asp_fichiers/drapeau_anglais.gif" border="0"></a>&nbsp;<a href="http://www.dacral.com/al/pages/accueil/accueil.asp"><img src="accueil.asp_fichiers/drapeau_allemand.gif" border="0" width="14" height="10"></a>&nbsp;<a href="http://www.dacral.com/es/pages/accueil/accueil.asp"><img src="accueil.asp_fichiers/drapeau_espagnol.gif" border="0" width="14" height="10"></a>&nbsp;<a href="http://www.dacral.com/it/pages/accueil/accueil.asp"><img src="accueil.asp_fichiers/drapeau_italien.gif" border="0" width="14" height="10"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#b2b2b2">
+              <a href="mailto:franck-raynaud@nofmetalcoatings.com"><font color="#b2b2b2">webmaster</font></a> | 
+           <a href="javascript:ouvrirPage('../../pages/accueil/infos_legales.asp',30,30,400,400);"><font color="#b2b2b2">infos légales</font></a></font></td>
+              <td align="right" width="100%" nowrap="nowrap"><font color="#b2b2b2">NOF METAL COATINGS EUROPE</font><font color="#b2b2b2"> ©&nbsp;&nbsp;</font></td>
+              <td align="right" valign="bottom" width="1">&nbsp;</td>
+            </tr>
+            <tr>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="5" height="10"></td>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+              <td><img src="accueil.asp_fichiers/spacer.gif" width="1" height="1"></td>
+            </tr>
+          </tbody></table>
+          <!-- FIN ZONE BAS DE PAGE -->
+        </td>
+      </tr>
+    </tbody></table>
+      <map name="MapMap">
+        <area shape="rect" coords="9,99,78,126" href="http://www.dacral.com/fr/pages/organisation/organisation3.asp">
+      </map></td>
+  </tr>
+</tbody></table>
+<map name="Map">
+  <area shape="rect" coords="9,99,78,126" href="http://www.dacral.com/fr/pages/organisation/organisation3.asp">
+</map>
+
+<map name="MapMonde"><area shape="rect" coords="1,1,45,45" href="http://www.dacral.com/" target="_blank">
+<area shape="rect" coords="0,51,39,92" href="http://www.dacromet.com.br/htm/metal.htm" target="_blank">
+<area shape="rect" coords="93,4,137,46" href="http://www.metal-coatings.com/" target="_blank">
+<area shape="rect" coords="47,2,91,45" href="http://www.n-d-s.co.jp/" target="_blank">
+<area shape="rect" coords="94,47,131,92" href="http://www.geomet.com.cn/" target="_blank">
+<area shape="rect" coords="47,44,90,93" href="http://www.shamrock.co.kr/" target="_blank">
+</map></body></html>

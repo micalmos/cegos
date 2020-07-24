@@ -1,0 +1,84 @@
+
+body	{background:#00ff00; 
+	color:#000000;
+	font-family:tahoma}
+
+h1	{font-family:verdana;
+	font-size: 12pt;
+	color:#000000}
+
+h2	{font-family:verdana;
+	font-size:11pt;
+	color:#000000}
+
+h3	{font-family:verdana;
+	font-size:10pt}
+
+h4	{font-family:verdana;
+	font-size:9pt}
+
+p	{font-family:verdana;
+	font-size:10pt}
+
+div	{font-family:verdana;
+	font-size: 10pt}
+
+li	{font-family:verdana;
+	font-size:9pt}
+
+dl	{font-family:verdana;
+	font-size:11pt}
+
+dt	{font-family:verdana;
+	font-size:10pt}
+
+dd	{font-family:verdana;
+	font-size:9pt}
+
+th	{font-family:verdana;
+	font-size:11pt}
+
+td	{font-family:verdana;
+	font-size:10pt}
+
+form {	padding-top: 6;
+	padding-right: 6;
+	padding-bottom:6;
+	padding-left: 18;
+	border: 3 solid #FFCC66;
+	background-color: #E9E9E9}
+
+a	{font-family:verdana;
+	font-size:10pt}
+
+a:visited	{color:#0000ff;
+	text-decoration:none}
+
+a:link	{color:#ffffff;
+	text-decoration:none}
+
+a:hover	{color:#ff0000;
+	text-decoration:none}
+
+p.citation	{font-family:verdana;
+	font-size:10pt;
+	font-style:italic;
+	font-variant:small-caps;
+	color:#ffffff}
+
+div.style1	{font-family:verdana;
+	font-size:10pt;
+	color:#000000;
+	background:#ff0000}
+
+div.style2	{font-family:verdana;
+	font-size:10pt;
+	color:#ff0000;
+	background:#000000}
+
+.special	{font-family:verdana;
+	font-size:11Pt;
+	color: #339966}
+
+blockquote	{font-family:verdana;
+		font-size:10pt}

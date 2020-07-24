@@ -1,0 +1,85 @@
+<!-- DEBUT DU SCRIPT -->
+<SCRIPT LANGUAGE="JavaScript">
+/*
+SCRIPT EDITE SUR L'EDITEUR JAVASCRIPT
+http://www.editeurjavascript.com
+URL du script : http://www.editeurjavascript.com/scripts/scripts_textes_1_80.php
+*/
+texteAff = "qsqSqs";
+place = 0;
+tempoLong = 100;
+function EJSAnimEtat2()
+	{
+	texteTemp1 = texteAff.substring(0,place);
+	texteTemp2 = texteAff.substring(place,place+1);
+	texteTemp2 = texteTemp2.toUpperCase();
+	texteTemp3 = texteAff.substring(place+1,texteAff.length);
+	window.status = texteTemp1 + texteTemp2 + texteTemp3;
+	if (place>texteAff.length)
+		{
+		place=0;
+		tempoLong=1000;
+		}
+	if (place==0)
+		tempoLong=100;
+	place++;
+	tempoAnimEtat2 = setTimeout("EJSAnimEtat2()",tempoLong)
+	}
+function EJSAnimEtat2Break()
+	{
+	window.status = "";
+	clearTimeout(tempoAnimEtat2);
+	}
+window.onload = EJSAnimEtat2;
+window.onunload = EJSAnimEtat2Break;
+</SCRIPT>
+<!-- FIN DU SCRIPT -->
+<style type="text/css">
+<!--
+body {
+	margin-left: 80px;
+}
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.Style5 {color: #FF0000}
+.Style6 {
+	color: #0000FF;
+	font-size: 12px;
+}
+.Style7 {font-size: 12px}
+-->
+</style>
+<h2 class="Style5" >Alice au pays des merveilles </h2>
+<hr align="left" width="500" />
+<p>Lewis Carroll</p>
+<h4>CHAPITRE I </h4>
+<h4>Le lapin blanc  </h4>
+<p align="center"><img src="images/alice.gif" name="alice" width="163" height="253" hspace="10" align="right" id="alice" onmouseover="document.alice.src='images/alice_fond.gif'"; onmouseout="document.alice.src='images/alice.gif'"
+/></p>
+<p align="justify" class="Style7">Il y avait une fois une petite fille appelée Alice, et elle fit un rêve très curieux.
+  Aimeriez-vous savoir ce dont elle rêva ? Eh bien, voici la chose qui, en premier, arriva.
+  
+  Un Lapin Blanc passa par là d'un pas pressé mais juste au moment de croiser Alice, il s'arrêta 
+  et tira sa montre de son gousset. N'était-ce pas là une drôle de chose ? Avez-vous 
+  déjà vu un Lapin possédant une montre, et un gousset où la mettre ? Naturellement, 
+  quand un lapin possède une montre, il faut bien qu'il ait aussi un gousset pour 
+  l'y mettre : il ne saurait la transporter dans sa bouche, et il a parfois besoin 
+  de ses mains pour courir. Il a, n'est-ce pas, de jolis yeux roses (tous les 
+  Lapins Blancs, je pense, ont les yeux roses) ; et des oreilles roses ; et une 
+  belle veste brune ; et l'on devine à peine le mouchoir rouge qui guette depuis 
+  sa poche ; quant à sa cravate bleue et à son gilet jaune, qu'en dire sinon qu'il 
+  est vraiment très joliment habillé. </p>
+  <p align="justify" class="Style6"> « Oh ma chère, ma chère !» dit le Lapin, 
+« je vais être en retard ! » . En quoi était-il en retard, je me le demande ? 
+  Eh bien, voyez-vous, c'est qu'il devait rendre visite à la Duchesse (vous verrez 
+  bientôt un portrait de la Duchesse, assise dans sa cuisine), et la Duchesse 
+était une vieille dame très sévère, et le Lapin savait qu'elle serait très en 
+  colère s'il la faisait attendre. Le pauvret était donc aussi effrayé qu'il pouvait 
+  l'être, car il pensait que la Duchesse lui ferait trancher la tête, pour le 
+  punir. 
